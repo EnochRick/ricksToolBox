@@ -21,10 +21,12 @@ robocopy /xc /xn /xo source destination
 Where:
 Robocopy: (Robocopy | Microsoft Learn)[https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy]
 	
-/xc	Excludes existing files with the same timestamp, but different file sizes.
-/xn	Source directory files newer than the destination are excluded from the copy.
-/xo	Source directory files older than the destination are excluded from the copy.
+- `/xc`	Excludes existing files with the same timestamp, but different file sizes.
+- `/xn`	Source directory files newer than the destination are excluded from the copy.
+- `/xo`	Source directory files older than the destination are excluded from the copy.
 
 
 Example
- robocopy /xc /xn /xo C:\Niagara\Niagara-4.14.0.162\modules\ C:\Niagara\Niagara-4.15.1.16\modules\
+ ``` powershell
+robocopy /xc /xn /xo C:\Niagara\Niagara-4.14.0.162\modules\ C:\Niagara\Niagara-4.15.1.16\modules\
+```
